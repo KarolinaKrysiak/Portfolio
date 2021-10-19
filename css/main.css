@@ -6,7 +6,8 @@
 
 /* ---------- root variables ---------- */
 :root {
-  --grey: #222;
+  --black: #222;
+  --grey: #333;
   --light-green: #;
   --light-grey: #;
   --text-color-light: #f1f1f1;
@@ -22,7 +23,8 @@ html {
   font-family: var(--font-family);
   height: 100%;
   width: 100%;
-  background-color: var(--grey);
+  background-color: var(--black);
+  overflow-x: hidden;
 }
 
 body {
@@ -107,7 +109,7 @@ p {
   z-index: 9999;
   right: 0;
   top: 0;
-  background-color: var(--grey);
+  background-color: var(--black);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -160,8 +162,6 @@ p {
   /*min heigh is screen heigh minus height of tab and top bar */
   min-height: calc(100vh - 110px);
   animation: fadeIn 0.4s;
-  /* padding equals height of tabbar and topbar */
-  padding: 55px;
 }
 
 /* ---------- section styling ---------- */
@@ -169,7 +169,20 @@ p {
   height: 100vh;
 }
 
-/* ---------- start section styling ---------- */
+.img-div {
+  height: 100%;
+  width: 50%;
+  top: 0;
+  margin-right: 0;
+  background: var(--grey);
+}
+
+.section-about {
+  display: flex;
+  flex-direction: row;
+}
+
+/* start section styling */
 
 .section-main div {
   position: absolute;
@@ -188,6 +201,8 @@ p {
   height: 85%;
   width: auto;
 }
+
+/* other sections styling */
 
 /* ---------- animations ---------- */
 /* fade in */
