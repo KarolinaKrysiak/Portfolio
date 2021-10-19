@@ -196,7 +196,8 @@ p {
 
 .section-projects,
 .section-about,
-.section-contact {
+.section-contact,
+.section-me {
   display: flex;
   flex-direction: row;
 }
@@ -234,7 +235,11 @@ p {
   width: auto;
 }
 
-/* other sections styling */
+/*-------------- about page styling ----------------*/
+
+.section-me {
+  height: 100vh;
+}
 
 /* ---------- animations ---------- */
 /* fade in */
