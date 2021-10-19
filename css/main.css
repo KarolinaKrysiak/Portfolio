@@ -172,14 +172,41 @@ p {
 .img-div {
   height: 100%;
   width: 50%;
-  top: 0;
-  margin-right: 0;
   background: var(--grey);
+  display: block;
 }
 
-.section-about {
+.text-side {
+  display: block;
+  width: 50%;
+}
+
+.text-block {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 10%;
+}
+
+.section-projects,
+.section-about,
+.section-contact {
   display: flex;
   flex-direction: row;
+}
+
+.email {
+  padding: 30px 0;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--text-color-light);
+  display: block;
+  transition: 0.3s;
+}
+.email:hover,
+.email:focus {
+  color: #6b37e2;
 }
 
 /* start section styling */
