@@ -1,6 +1,12 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 /* ---------- root variables ---------- */
 :root {
-  --grey: #333;
+  --grey: #222;
   --light-green: #;
   --light-grey: #;
   --text-color-light: #f1f1f1;
@@ -10,16 +16,13 @@
 }
 
 /* ---------- general styling ---------- */
-*, ::before, ::after {
-  box-sizing: border-box;
-}
 
 html {
-  color: var(--text-color-dark);
+  color: var(--text-color-light);
   font-family: var(--font-family);
   height: 100%;
-  text-align: center;
   width: 100%;
+  background-color: var(--grey);
 }
 
 body {
@@ -38,65 +41,163 @@ h3 {
   margin: 0.5em 0 0.2em;
 }
 
-img{
+img {
   width: 100%;
   height: auto;
 }
 
-/* ---------- topbar styling ---------- */
-.topbar {
-  color: var(--text-color-light);
-  padding: 13.5px;
-  text-transform: uppercase;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
+p {
+  max-width: 600px;
 }
 
-.topbar h2 {
-  margin: 0;
+/* ---------- navigation styling ---------- */
+.main-navigation {
+  z-index: 50;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 9%;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 5em;
+  margin: 0 10%;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
   font-weight: 400;
 }
 
-.topbar a {
+.nav-items a {
   text-decoration: none;
+  color: white;
+  margin: 0;
+  font-size: 1em;
+}
+
+.nav-items a:hover {
+  cursor: pointer;
+  color: #888;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+}
+
+/* ---- overlay ----*/
+
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 0;
+  background-color: var(--grey);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
   color: var(--text-color-light);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #6b37e2;
+}
+
+.overlay .closebtn {
   position: absolute;
   top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
-.topbar a.left {
-  left: 20px;
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
-
-.topbar a.right {
-  right: 20px;
-}
-
 
 /* ---------- page styling ---------- */
 .page {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
   min-height: calc(100vh - 110px);
-  background: var(--grey);
   animation: fadeIn 0.4s;
   /* padding equals height of tabbar and topbar */
-  padding: 55px 0;
+  padding: 55px;
 }
 
+/* ---------- section styling ---------- */
+.section {
+  height: 100vh;
+}
+
+/* ---------- start section styling ---------- */
+
+.section-main div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.section-main img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  height: 85%;
+  width: auto;
+}
 
 /* ---------- animations ---------- */
 /* fade in */
 @keyframes fadeIn {
   from {
-    opacity: 0
+    opacity: 0;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -109,48 +210,3 @@ img{
     transform: rotate(360deg);
   }
 }
-
-
-
-/* ---------- loader styling ---------- */
-#loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999999999;
-  overflow: hidden;
-  background: var(--loader-background-color);
-  text-align: center;
-}
-
-.spinner {
-  border: 5px solid var(--light-grey);
-  border-radius: 50%;
-  border-top: 5px solid var(--light-green);
-  width: 50px;
-  height: 50px;
-  -webkit-animation: spin 1s linear infinite;
-  /* Safari */
-  animation: spin 1s linear infinite;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.hide {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0.4s, opacity 0.4s linear;
-}
-
-
-
-
-
