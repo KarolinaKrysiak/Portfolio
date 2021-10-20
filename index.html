@@ -15,25 +15,23 @@
 
   <body onhashchange="pageChange()">
     <!-- navigation -->
-    <header class="container">
-      <div class="main-navigation">
-        <nav class="main-nav">
-          <div class="nav-items">
-            <a href="/">Karolina Krysiak</a>
-          </div>
-          <div class="icons">
-            <a href="#"
-              ><img src="/icons/li.svg" alt="linkedin icon" class="some_image"
-            /></a>
-            <a href="#"
-              ><img src="/icons/fb.svg" alt="facebook icon" class="some_image"
-            /></a>
-            <span onclick="openNav()"
-              ><img alt="burger menu" src="/icons/menu.svg"
-            /></span>
-          </div>
-        </nav>
-      </div>
+    <header class="main-navigation">
+      <nav class="main-nav">
+        <div class="nav-items">
+          <a href="/">Karolina Krysiak</a>
+        </div>
+        <div class="icons">
+          <a href="#"
+            ><img src="/icons/li.svg" alt="linkedin icon" class="some_image"
+          /></a>
+          <a href="#"
+            ><img src="/icons/fb.svg" alt="facebook icon" class="some_image"
+          /></a>
+        </div>
+        <span class="span" onclick="openNav()"
+          ><img alt="burger menu" src="/icons/menu.svg"
+        /></span>
+      </nav>
 
       <!-- The overlay -->
       <div id="myNav" class="overlay">
@@ -57,11 +55,11 @@
     <section id="main" class="page">
       <section class="section section-main">
         <div>
-          <h1>Karolina Krysiak</h1>
           <h2>Multimedia Designer</h2>
+          <h1>Karolina Krysiak</h1>
           <h3>Frontend Specialist</h3>
         </div>
-        <img alt="#" src="/img/circle.png" />
+        <img alt="background circle" src="/img/circle.png" />
       </section>
 
       <section class="section section-about">
@@ -74,11 +72,11 @@
               as developing working products brings me lots of satisfaction and
               is something that I am most passionate about.
             </p>
-            <div><a href="#about">READ MORE</a></div>
+            <a class="button" href="#about">READ MORE</a>
           </div>
         </div>
         <div class="img-div">
-          <img alt="#" src="#" />
+          <img alt="a bit painted over picture of me" src="/img/pic.png" />
         </div>
       </section>
 
@@ -93,7 +91,7 @@
               do not specialise in. I never pass the opportunity to learn new
               things!
             </p>
-            <div><a href="#projects">READ MORE</a></div>
+            <a href="#projects" class="button">READ MORE</a>
           </div>
         </div>
         <div class="img-div">
@@ -147,7 +145,7 @@
           </div>
         </div>
         <div class="img-div">
-          <img alt="#" src="#" />
+          <img alt="a bit painted over picture of me" src="/img/pic.png" />
         </div>
       </section>
       <section class="section-me">
@@ -173,48 +171,50 @@
           </div>
         </div>
         <div class="img-div">
-          <img alt="#" src="#" />
+          <img alt="picture of me" src="/img/me.jpg" />
         </div>
       </section>
-      <section>
-        <h3>My skillset</h3>
+      <section class="section-skillset">
         <div>
+          <h3 class="about-header">My skillset</h3>
           <div>
-            <img alt="#" src="#" />
-            <img alt="#" src="#" />
-            <img alt="#" src="#" />
+            <div class="icon-line">
+              <img alt="html icon" src="#" />
+              <img alt="css icon" src="#" />
+              <img alt="js icon" src="#" />
+            </div>
+            <div class="icon-line-bottom">
+              <img alt="xd" src="#" />
+              <img alt="Photoshop" src="#" />
+            </div>
           </div>
-          <div>
-            <img alt="#" src="#" />
-            <img alt="#" src="#" />
+          <div class="skills-text">
+            <p>
+              I am on the frontend specialisation and I am most passionate about
+              programming. Through the last semesters I have been working mostly
+              with HTML and CSS. Even though I have been introduced to
+              JavaScript just recently I feel this is something I want to work
+              with. I also had some oportunities to work with Python and C++ and
+              I am planning on mastering those languages in the future as well.
+            </p>
+            <p>
+              While my main focus lays on developing my programming skills I
+              also care a lot about creating best possible design. Whether it is
+              a layout of the website or an illustration I have to create, I
+              always try to make it look perfect. In order to do that I work
+              mostly with Adobe Xd and Adobe Photoshop but I am also familiar
+              with other Adobe programs like Illustrator, Animate and Premiere
+              Pro.
+            </p>
           </div>
-        </div>
-        <p>
-          I am on the frontend specialisation and I am most passionate about
-          programming. Through the last semesters I have been mostly working
-          mostly with HTML and CSS. Even though I have been introduced to
-          JavaScript just recently I feel this is something I want to work with.
-          I also had some oportunities to work with Python and C++ and I am
-          planning on mastering those languages in the future as well.
-        </p>
-        <p>
-          While my main focus lays on developing my programming skills I also
-          care a lot about creating best possible design. Whether it is a layout
-          of the website or a piece of art I have to create, I always try to
-          make it look perfect. In order to do that I work mostly with Adobe Xd
-          and Adobe Photoshop but I am also familiar with other Adobe programs
-          like Illustrator, Animate and Premiere Pro.
-        </p>
-        <div>
-          <img alt="#" src="#" />
         </div>
       </section>
 
       <section>
-        <div>
-          <h2>What I am passionate about</h2>
-          <div>
-            <div>
+        <h3 class="about-header">What I am passionate about</h3>
+        <div class="section-me">
+          <div class="text-side">
+            <div class="text-block">
               <p>
                 Well, about frontend of course! But beside that I really love
                 playing Dungeons & Dragons. It may be just a game but a lot of
@@ -223,40 +223,49 @@
                 and surviving whatever is thrown at me.
               </p>
               <p>
-                I play a lot of different games both multplayer where I have to
-                cooperate with strangers and singleplayer for boosting my
-                imagination.
+                I play a lot of different computer games, both multplayer where
+                I have to cooperate with strangers and singleplayer for boosting
+                my imagination.
               </p>
             </div>
-            <div>
-              <img
-                alt="picture of set of dices on my favourite rock"
-                src="/img/dice.jpg"
-              />
+          </div>
+          <div class="img-div">
+            <img
+              alt="picture of set of dices on the rock I found"
+              src="/img/dice.jpg"
+            />
+          </div>
+        </div>
+
+        <div class="section-me">
+          <div class="text-side">
+            <div class="text-block">
+              <p>
+                As they say: "a healthy mind in a healthy body", so I never
+                limited myself to just sitting in front of computer.
+              </p>
+              <p>
+                I was part of the airsoft group for a few years back in Poland.
+                I'm not going to lie, I was terrible at aiming. Fortunately I
+                was pretty good at navigating which was crucial skill in huge
+                forests, especially at night with no light source. As one of the
+                older members I often helped with organising events and creating
+                tactics for longer games.
+              </p>
+              <p>
+                I have also trained Krav Maga, Takwondo and Karate Kyokushin.
+                Most of the time I was the one collecting all of the punches but
+                small inconveniences have never stopped me from doing I am
+                passionate about.
+              </p>
             </div>
           </div>
-
-          <p>
-            As they say: "a healthy mind in a healthy body", so I never limited
-            myself to just sitting in front of computer.
-          </p>
-          <p>
-            I was part of the airsoft group for a few years back in Poland. I'm
-            not going to lie, I was terrible at aiming. Fortunately I was pretty
-            good at navigating which was crucial skill in huge forests,
-            especially at night with no light source. As one of the older
-            members I often helped with organising events and creating tactics
-            for longer games.
-          </p>
-          <p>
-            I have also trained Krav Maga, Takwondo and Karate Kyokushin. Most
-            of the time I was the one collecting all of the punches but small
-            inconveniences has never stopped me from doing what I set on doing.
-          </p>
-          <img
-            alt="picture of me analyzing map of the forest"
-            src="/img/airsoft.jpg"
-          />
+          <div class="img-div">
+            <img
+              alt="picture of me analyzing map of the forest"
+              src="/img/airsoft.jpg"
+            />
+          </div>
         </div>
       </section>
     </section>
