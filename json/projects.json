@@ -1,11 +1,22 @@
 [
   {
-    "id": 0
+    "id": 0,
+    "title": "MOONVY Jewellery case",
+    "img": "#",
+    "undertitle": "A cross-disciplinary 2nd semester exam project.",
+    "description": "",
+    "methodology": "",
+    "mywork": "We all have worked together on most of the elements. I mostly contributed to the coded solution",
+    "github": "#"
   },
   {
-    "id": 1
-  },
-  {
-    "id": 2
+    "id": 1,
+    "title": "Game Characters web-app",
+    "img": "#",
+    "undertitle": "A small 3rd semester project with single page web application structure",
+    "description": "",
+    "methodology": "",
+    "mywork": "This is the project I have created on my own as a backup to the group project I was working on. In the short amount of time I had, I have intrviewed the target audience about my idea, wrote creative brief and user scenario. I have created a mockup and managed to do few think aloud user tests on it. I coded as much as I managed within the time I had.",
+    "github": "#"
   }
 ]
