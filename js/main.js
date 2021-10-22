@@ -58,9 +58,12 @@ function showDetailView(id) {
     <img src="${projectToShow.img}">
     <article>
       <h2>${projectToShow.title}</h2>
-      <h3>${projectToShow.brand}</h3>
-      <p>Price: ${projectToShow.price} kr.</p>
-      <p>Status: ${projectToShow.status}</p>
+      <<h3>${projectToShow.undertitle}</h3>
+      <p>${projectToShow.description}</p>
+      <p>${projectToShow.methodology}</p>
+      <p>${projectToShow.time}</p>
+      <p>${projectToShow.group}</p>
+      <a href="${projectToShow.github}">Github link</a>
     </article>
   `;
 }
