@@ -10,6 +10,11 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
+  function onLinkClick() {
+    document.getElementById("contact").scrollIntoView();
+    // will scroll to 4th h3 element
+  }
+
   // =========== Project functionality =========== //
 /*
 global variables: _projects _selectedProjectId

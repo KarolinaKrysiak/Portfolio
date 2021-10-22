@@ -34,9 +34,10 @@ html {
   padding: 0px;
   background-color: var(--black);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-html body {
+body {
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -164,17 +165,21 @@ p {
 }
 
 /* The navigation links inside the overlay */
-.overlay a {
+.overlay a,
+.overlay span {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: var(--text-color-light);
   display: block;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .overlay a:hover,
-.overlay a:focus {
+.overlay a:focus,
+.overlay span:hover,
+.overlay span:focus {
   color: var(--blue);
 }
 
@@ -386,13 +391,32 @@ p {
 
 .icon-line {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background: var(--blue);
+  display: flex;
+  padding-top: 45px;
 }
 .icon-line-bottom {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background: var(--light-blue);
+  display: flex;
+  padding-top: 45px;
+}
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.icon-container img {
+  height: 50px;
+  width: auto;
+  position: initial;
+  margin: auto 3%;
+  padding: 0;
 }
 
 .about-header {

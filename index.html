@@ -55,9 +55,9 @@
         <!-- Overlay content -->
         <div class="overlay-content">
           <a href="/">Home</a>
-          <a href="#about">About me</a>
-          <a href="#projects">Projects</a>
-          <a href="#">Contact</a>
+          <a href="#about" onclick="closeNav()">About me</a>
+          <a href="#projects" onclick="closeNav()">Projects</a>
+          <span onclick="onLinkClick(), closeNav()">Contact</span>
         </div>
       </div>
     </header>
@@ -115,7 +115,7 @@
         </div>
       </section>
 
-      <section class="section section-contact">
+      <section id="contact" class="section section-contact">
         <div class="text-side">
           <div class="text-block">
             <h2>Get in touch</h2>
@@ -206,13 +206,17 @@
           <h3 class="about-header">My skillset</h3>
           <div>
             <div class="icon-line">
-              <img alt="html icon" src="#" />
-              <img alt="css icon" src="#" />
-              <img alt="js icon" src="#" />
+              <div class="icon-container">
+                <img alt="html icon" src="/icons/html.svg" />
+                <img alt="css icon" src="/icons/css.svg" />
+                <img alt="js icon" src="/icons/js.svg" />
+              </div>
             </div>
             <div class="icon-line-bottom">
-              <img alt="xd" src="#" />
-              <img alt="Photoshop" src="#" />
+              <div class="icon-container">
+                <img alt="xd" src="/icons/xd.svg" />
+                <img alt="Photoshop" src="/icons/ps.svg" />
+              </div>
             </div>
           </div>
           <div class="skills-text">
@@ -335,12 +339,12 @@
           </p>
         </div>
         <div class="icon-line-bottom skill-line">
-          <img alt="github" src="#" />
-          <img alt="adobe xd" src="#" />
-          <img alt="loom" src="#" />
-          <img alt="lookback" src="#" />
-          <img alt="miro" src="#" />
-          <img alt="trello" src="#" />
+          <div class="icon-container">
+            <img alt="github" src="/icons/git.svg" />
+            <img alt="adobe xd" src="/icons/xd.svg" />
+            <img alt="loom" src="/icons/loom.svg" />
+            <img alt="lookback" src="/icons/lookback.svg" />
+          </div>
         </div>
         <div class="projects-text">
           <p>
