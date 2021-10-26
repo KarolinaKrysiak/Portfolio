@@ -10,7 +10,7 @@
     <meta name="description" content="My portfolio" />
     <meta name="author" content="Karolina Krysiak" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="shortcut icon" type="image/png" href="#" />
+    <link rel="shortcut icon" type="image/png" href="/img/circle.png" />
   </head>
 
   <body onhashchange="pageChange()">
@@ -57,7 +57,7 @@
           <a href="/">Home</a>
           <a href="#about" onclick="closeNav()">About me</a>
           <a href="#projects" onclick="closeNav()">Projects</a>
-          <span onclick="onLinkClick(), closeNav()">Contact</span>
+          <a href="/" onclick="onLinkClick(), closeNav()">Contact</a>
         </div>
       </div>
     </header>
@@ -78,6 +78,10 @@
         <div class="text-side">
           <div class="text-block">
             <h2>A little bit about me</h2>
+            <div class="red-lines"> 
+              <div><span class="red-line"> </span> <span class="red-line"></span></div>
+              <span class="red-line"></span>
+              </div>
             <p>
               I am a student at Business Academy Aarhus on Multimedia
               Design and Communucation programme. For my
@@ -100,6 +104,10 @@
         <div class="text-side">
           <div class="text-block">
             <h2>The projects I have worked on</h2>
+            <div class="red-lines"> 
+              <div><span class="red-line"> </span> <span class="red-line"></span></div>
+              <span class="red-line"></span>
+              </div>
             <p>
               In Business Academy Aarhus the ability of cooperating in
               groups is of great importance. Most of the work I have
@@ -122,6 +130,10 @@
         <div class="text-side">
           <div class="text-block">
             <h2>Get in touch</h2>
+            <div class="red-lines"> 
+              <div><span class="red-line"> </span> <span class="red-line"></span></div>
+              <span class="red-line"></span>
+              </div>
             <address>
               <a
                 href="mailto:karolinakrysiak01@gmail.com"
@@ -148,7 +160,7 @@
           </div>
         </div>
         <div class="img-div">
-          <img alt="#" src="#" />
+          <img alt="envelope" src="/img/envelope.png" />
         </div>
       </section>
     </section>
@@ -159,6 +171,10 @@
         <div class="text-side">
           <div class="text-block">
             <h2>A little bit about me</h2>
+            <div class="red-lines"> 
+              <div><span class="red-line"> </span> <span class="red-line"></span></div>
+              <span class="red-line"></span>
+              </div>
             <p>
               I am a student at Business Academy Aarhus on Multimedia
               Design and Communucation programme. For my
@@ -179,6 +195,7 @@
         <div class="text-side">
           <div class="text-block">
             <h3>Who I am</h3>
+            <span class="red-line-p"></span>
             <p>
               Born in Lubin, Poland in 2001. What pushed me into
               moving abroad was my curiosity about the world and
@@ -233,6 +250,7 @@
               and I am planning on mastering those languages in the
               future as well.
             </p>
+            <span class="red-line-p"></span>
             <p>
               While my main focus lays on developing my programming
               skills I also care a lot about creating best possible
@@ -252,6 +270,7 @@
           <div class="text-side">
             <div class="text-block">
               <h3 style="margin-bottom: 50px">What is my passion</h3>
+              <span class="red-line-p"></span>
               <p>
                 Well, frontend of course! But beside that I really
                 love playing Dungeons & Dragons. It may be just a game
@@ -293,10 +312,10 @@
                 creating tactics for longer games.
               </p>
               <p>
-                I have also trained Krav Maga, Takwondo and Karate
+                I have also trained Krav Maga, Taekwondo and Karate
                 Kyokushin. Most of the time I was the one collecting
                 all of the punches but small inconveniences have never
-                stopped me from doing I am passionate about.
+                stopped me from doing what I am passionate about.
               </p>
             </div>
           </div>
@@ -305,6 +324,7 @@
               alt="picture of me analyzing map of the forest"
               src="/img/airsoft.jpg"
             />
+
           </div>
         </div>
       </section>
@@ -316,6 +336,10 @@
         <div class="text-side">
           <div class="text-block">
             <h2>The projects I have worked on</h2>
+            <div class="red-lines"> 
+              <div><span class="red-line"> </span> <span class="red-line"></span></div>
+              <span class="red-line"></span>
+              </div>
             <p>
               In Business Academy Aarhus the ability of cooperating in
               groups is of great importance. Most of the work I have
@@ -327,7 +351,7 @@
         </div>
         <div class="img-div">
           <img
-            alt="I mage of the prototype"
+            alt="Image of the prototype"
             src="/img/prototype.png"
           />
         </div>
@@ -335,6 +359,7 @@
 
       <section class="section">
         <h3 class="about-header">How I work on the projects</h3>
+        <span class="red-line-p"></span>
         <div class="projects-text">
           <p>
             In a group work there are almost never situtions where
@@ -381,15 +406,27 @@
             There are not many projects yet that I could show off but
             this is going to change very soon!
           </p>
+          <div class="github-link">
+            <span class="blue-line"></span>
+            <a href="https://github.com/KarolinaKrysiak/Portfolio">Portfolio code on GitHub</a>
+            <span class="blue-line"></span>
+            <div>
         </div>
       </section>
     </section>
 
+    
     <!-- project detail page -->
 
     <section id="detail-view" class="page">
+      <a class="back" href="#projects">&#9664 Back to projects</a>
       <section id="detail-view-container"></section>
     </section>
+
+    <footer>
+      <p>Copyright © 2021 Karolina Anna Krysiak Powered by Karolina Anna Krysiak</p>
+    </footer>
+
 
     <!-- SPA functionality  -->
     <script src="js/spa.js"></script>

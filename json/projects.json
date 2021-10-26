@@ -5,22 +5,10 @@
     "img": "/img/prototype.png",
     "undertitle": "A cross-disciplinary 2nd semester exam project.",
     "description": "MOONVY Jewellery is owned by a high school student that is running on a low budget. The gpal of our project wast to help her appear more trustworthy to consumers, form relationships that create a more personal experience for the customers and finally gain extra traffic to the webshop in order to increase sales.",
-    "methodology": "",
+    "methodology": "We have strated with business analysis. For that we made Golden Circle, filled Value Proposition canvas and interviewed the owner to get detailed insight. We also did extensive desk rearch for to analise problem. To analise the target audience, we conducted a lot of interviews and created right persona. With the data we gathered we wrote extensive creative brief and design guide.<br><br> We created lo-fi, hi-fi wireframes and mockups in Adobe Xd and tested everything accordingly. We did card sorting, expert tests and think aloud tests. We coded everything with HTML, CSS and Javascript, keeping SEO in mind.",
     "mywork": "Every gorup member has contributed to most of the elements. I have mostly worked on the coded solution.",
     "github": "https://github.com/amandajakse/Exam-Project-MOONVY",
     "time": "1 month",
     "group": "5 people"
-  },
-  {
-    "id": 1,
-    "title": "Game Characters web-app",
-    "img": "#",
-    "undertitle": "A small 3rd semester project with single page web application structure",
-    "description": "The goal of this web-app is to to help users find the right game to play. As for a lot of people it matters a lot that the character they are playing seems interesting I decided to create an project that mostly focuses on that aspect. I have created a solution that helps to find user games with the playable character that fits their preferences",
-    "methodology": "I starded with testing my idea and doing desk research. I interviewed potential target audience in order to better understand their point view. The input I gained was enough was enough for me create a creative brief and user journey. <br> In the mockup I tried to include best solutions to user needs. After doing few think aloud tests I applied all of the necesery improvements and coded as much as I could in the short amount of time I had",
-    "mywork": "This is a project fully developed by me.",
-    "github": "https://github.com/KarolinaKrysiak/WebApp_GameCharacters",
-    "time": "5 days",
-    "group": "1 person"
   }
 ]

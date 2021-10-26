@@ -12,7 +12,7 @@ function openNav() {
 
   function onLinkClick() {
     document.getElementById("contact").scrollIntoView();
-    // will scroll to 4th h3 element
+
   }
 
   // =========== Project functionality =========== //
@@ -31,7 +31,6 @@ async function fetchData() {
   _projects = data;
   console.log(_projects);
   appendProjects(_projects);
-  showLoader(false);
 }
 
 fetchData();
@@ -41,9 +40,11 @@ function appendProjects(projects) {
   for (let project of projects) {
     htmlTemplate += /*html*/`
         <article onclick="showDetailView(${project.id})">
+        
           <img src="${project.img}">
           <h2>${project.title}</h2>
           <h3>${project.undertitle}</h3>
+          
         </article>
     `;
   }
@@ -51,19 +52,38 @@ function appendProjects(projects) {
 }
 
 function showDetailView(id) {
+  _selectedProjectId = id;
   const projectToShow = _projects.find(project => project.id === id);
   navigateTo("detail-view");
-  document.querySelector("#detail-view .title").innerHTML = projectToShow.title;
-  document.querySelector("#detail-view-container").innerHTML = /*html*/`
-    <img src="${projectToShow.img}">
-    <article>
+  
+  document.querySelector("#detail-view-container").innerHTML = /*html*/` 
+  
+  <section class="deteils">
+<div class="details-top">
+  <div class="prototype-div">
+    <img src="${projectToShow.img}"/>
+  </div>
+    <div  class="details-right">
       <h2>${projectToShow.title}</h2>
-      <<h3>${projectToShow.undertitle}</h3>
+      <span class="red-line-p"></span>
+      <p>${projectToShow.undertitle}</p>
+      <p>Ammount of time: ${projectToShow.time}</p>
+      <p>Group: ${projectToShow.group}</p>
+    </div>
+</div>
+<div  class="details-bottom">
+      <h3>What the project was about</h3>
+      <span class="red-line-p"></span>
       <p>${projectToShow.description}</p>
+      <h3>The process</h3>
+      <span class="red-line-p"></span>
       <p>${projectToShow.methodology}</p>
-      <p>${projectToShow.time}</p>
-      <p>${projectToShow.group}</p>
-      <a href="${projectToShow.github}">Github link</a>
-    </article>
+      <div class="github-link">
+      <span class="blue-line"></span>
+      <a href="${projectToShow.github}">Link to the GitHub</a>
+      <span class="blue-line"></span>
+      <div>
+</div>
+    </section>
   `;
 }
