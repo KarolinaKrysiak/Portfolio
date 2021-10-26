@@ -342,15 +342,28 @@ p {
   .section-me {
     flex-direction: column;
   }
+  .section-about {
+    margin-top: -500px;
+  }
+  .section-me {
+    margin-top: 100px;
+  }
 
+  .section-hobby {
+    margin-top: -100px;
+    margin-bottom: 100px;
+  }
+  .section-skillset {
+    margin-top: 300px;
+  }
   .img-div {
-    max-height: 50%;
+    height: 30%;
     width: 100%;
     margin: 0;
   }
   .img-div img {
     display: block;
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: auto;
   }
@@ -514,12 +527,34 @@ p {
 }
 
 .skill-line {
-  margin: 150px 0;
+  margin: 150px auto;
+}
+
+.flex-icon-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-icon-container div {
+  display: flex;
+}
+.flex-icon-container div img {
+  margin: auto 1em;
 }
 
 .github-link a {
   color: var(--text-color-light);
   font-weight: bold;
+}
+
+@media only screen and (max-width: 820px) {
+  .section-projects {
+    margin-top: -400px;
+  }
+
+  .flex-icon-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* ---------- animations ---------- */
@@ -591,6 +626,13 @@ p {
 
 /*----------- detail view ----------------*/
 
+@media only screen and (max-width: 820px) {
+  .example-section {
+    height: 100vh;
+    margin-top: -600px;
+    margin-bottom: 100px;
+  }
+}
 .prototype-div {
   width: 50%;
   display: block;
