@@ -386,15 +386,26 @@ p {
   color: var(--text-color-light);
   display: block;
   transition: 0.3s;
+  text-align: center;
 }
 .email:hover,
 .email:focus {
   color: var(--light-blue);
 }
 
+@media only screen and (max-width: 820px) {
+  .email {
+    font-size: 1.5em;
+  }
+
+  .section-contact {
+    margin-top: -400px;
+  }
+}
+
 .icons-contact {
-  display: block;
-  float: left;
+  display: flex;
+  justify-content: center;
   margin: 50px 0;
 }
 
@@ -548,7 +559,7 @@ p {
 
 @media only screen and (max-width: 820px) {
   .section-projects {
-    margin-top: -400px;
+    margin-top: -300px;
   }
 
   .flex-icon-container {
