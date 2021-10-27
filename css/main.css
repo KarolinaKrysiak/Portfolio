@@ -656,6 +656,7 @@ p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  min-width: 300px;
 }
 
 .details-right {
@@ -689,6 +690,21 @@ p {
 @media only screen and (max-width: 820px) {
   .details-top {
     flex-direction: column;
+  }
+  .details-top {
+    margin: 0;
+  }
+
+  .details-bottom {
+    width: 90%;
+    margin: auto;
+  }
+  .prototype-div {
+    width: 100%;
+  }
+
+  .prototype-div img {
+    top: 300px;
   }
 }
 
