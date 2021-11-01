@@ -10,6 +10,7 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
+  /* Close when someone clicks on the lnk inside the overlay */
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
     window.scroll({
@@ -18,10 +19,6 @@ function openNav() {
      });
   }
 
-  function onLinkClick() {
-    document.getElementById("contact").scrollIntoView();
-
-  }
 
   // =========== Project functionality =========== //
 /*
