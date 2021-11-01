@@ -6,8 +6,16 @@ function openNav() {
   }
   
   /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNavX() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    window.scroll({
+      top: 0, 
+      left: 0, 
+     });
   }
 
   function onLinkClick() {
