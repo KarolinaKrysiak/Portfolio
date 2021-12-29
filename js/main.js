@@ -51,13 +51,15 @@ function appendProjects(projects) {
   let htmlTemplate = "";
   for (let project of projects) {
     htmlTemplate += /*html*/`
-        <article onclick="showDetailView(${project.id})">
+        <div onclick="showDetailView(${project.id})">
         
           <img src="${project.img}">
+          <div class="centered">
           <h2>${project.title}</h2>
           <h3>${project.undertitle}</h3>
+  </div>
           
-        </article>
+        </div>
     `;
   }
   document.querySelector('#projects-container').innerHTML = htmlTemplate;
