@@ -2,7 +2,7 @@
   {
     "id": 0,
     "title": "MOONVY Jewellery case",
-    "img": "/img/prototype.png",
+    "img": "/img/moonvy.jpg",
     "undertitle": "A cross-disciplinary 2nd semester exam project.",
     "description": "MOONVY Jewellery is owned by a high school student that is running on a low budget. The goal of our project wast to help her appear more trustworthy to consumers, form relationships that create a more personal experience for the customers and finally gain extra traffic to the webshop in order to increase sales.",
     "methodology": "We have strated with business analysis. For that we made Golden Circle, filled Value Proposition canvas and interviewed the owner to get detailed insight. We also did extensive desk rearch for to analise problem. To analise the target audience, we conducted a lot of interviews and created right persona. With the data we gathered we wrote extensive creative brief and design guide.<br><br> We created lo-fi, hi-fi wireframes and mockups in Adobe Xd and tested everything accordingly. We did card sorting, expert tests and think aloud tests. We coded everything with HTML, CSS and Javascript, keeping SEO in mind.",
@@ -15,7 +15,7 @@
   {
     "id": 1,
     "title": "Fafner Rollespil case",
-    "img": "/img/prototype.png",
+    "img": "/img/fafner.jpg",
     "undertitle": "A cross-disciplinary 3rd semester exam project.",
     "description": "",
     "methodology": "",
