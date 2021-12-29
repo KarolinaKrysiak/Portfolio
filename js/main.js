@@ -78,6 +78,7 @@ function showDetailView(id) {
     <div  class="details-right">
       <h2>${projectToShow.title}</h2>
       <span class="red-line-p"></span>
+      <a href="${projectToShow.link}" target="_blank">Link to a working prototype</a>
       <p>${projectToShow.undertitle}</p>
       <p>Ammount of time: ${projectToShow.time}</p>
       <p>Group: ${projectToShow.group}</p>
