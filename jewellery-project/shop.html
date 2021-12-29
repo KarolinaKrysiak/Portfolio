@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Shop all of our products. Handmade and with love by MOONVY Jewellery. See trending products here. See new products here. See on sale products here.">
+	<meta name="keywords" content="jewellery, MOONVY, MOONVY Jewellery, BestSellers, Now trending, trending jewellery, all products, New Arrivals, On Sale, sale jewellery, new products, asian fashion, asian jewellery, k-pop jewellery, k-pop, asian fashion style, earrings, necklaces, earring, necklace, jewellery set, cute jewellery, original jewellery, handmade jewellery, tiktok jewellery, jewelry">
+	<link rel="stylesheet" href="css/shop_style.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+	<title>MOONVY Jewelery | Shop</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<header class="navigation_container">
+		<div class="header_top">
+
+			<!-- mobile menu -->
+
+			<span class="mobileicon" onclick="openMenu()">&#9776;</span>
+
+			<div id="overlay" class="overlay">
+
+				<a class="x_button" onclick="closeMenu()">&times;</a>
+
+				<div class="overlay-links">
+					<a class="overlay_link" href="shop.html">SHOP</a>
+					<a class="overlay_link" href="about.html">ABOUT</a>
+					<a class="overlay_link" href="contact.html">CONTACT</a>
+
+					<div>
+						<a href="https://www.instagram.com/moonvy_jewellery/?hl=en"><img class="menu_some_icon" alt="instagram icon" src="pictures/white-instagram-icon-png.png"></a>
+
+						<a href="https://www.tiktok.com/@moonvy_jewellery?"><img class="menu_some_icon" alt="tiktok icon" src="pictures/tiktok-48.png"></a>
+					</div>
+				</div>
+
+				<a href="index.html"><img class="menu_logo" alt="logo" src="pictures/logo.png"></a>
+
+			</div>
+
+			<!--The company logo -->
+			<a href="index.html"><img alt="logo" src="pictures/logo.png" class="companylogo"></a>
+
+			<!-- search -->
+			<img alt="search icom" src="pictures/search_icon.PNG" class="search_icon" onclick="showSearch()">
+
+			<!-- Link to shopping cart -->
+			<a href="checkout.html"><img alt="shopping cart icom" src="pictures/shoppingbag_icon.PNG" class="bag_icon"></a>
+		</div>
+
+		<div id="searchField" class="search">
+
+			<input type="text" id="productName" onkeyup="searchFunction()" placeholder="Search for products...">
+
+			<ul id="myUL">
+				<li><a class="search_link link1" href="product1.html">Philosophia earrings</a></li>
+				<li><a class="search_link" href="product2.html">Shooting stars earrings</a></li>
+
+				<li><a class="search_link" href="product3.html">Huggies set</a></li>
+				<li><a class="search_link" href="product4.html">Outer space earrings</a></li>
+
+				<li><a class="search_link" href="product5.html">Celine drop earrings</a></li>
+				<li><a class="search_link" href="product6.html">Illuminate earrings</a></li>
+				<li><a class="search_link" href="product7.html">Magnolia set</a></li>
+
+				<li><a class="search_link" href="product.html">Smooth like a snake necklace</a></li>
+				<li><a class="search_link" href="product19.html">Huggies earrings</a></li>
+			</ul>
+
+
+		</div>
+
+		<nav>
+
+			<!-- Menu items -->
+			<div class="menuitems_container">
+				<a href="shop.html" class="menuitem active_menuitem">Shop</a>
+				<a href="about.html" class="menuitem underline_on_hover">About</a>
+				<a href="contact.html" class="menuitem underline_on_hover">Contact</a>
+
+
+			</div>
+
+		</nav>
+
+	</header>
+
+
+	<main>
+
+
+		<div class="filter_group">
+			<p class="filter_btn active_button">ALL</p>
+			<p class="filter_btn" id="filter_button1" onclick="myFunction1()">NEW</p>
+			<p class="filter_btn" id="filter_button2" onclick="myFunction2()">TRENDING</p>
+			<p class="filter_btn" id="filter_button3" onclick="myFunction3()">EARRINGS</p>
+			<p class="filter_btn" id="filter_button4" onclick="myFunction4()">NECKLACES</p>
+			<p class="filter_btn" id="filter_button5" onclick="myFunction5()">SETS</p>
+			<p class="filter_btn " id="filter_button6" onclick="myFunction6()">SALE</p>
+		</div>
+
+		<div class="shop_item_container">
+
+			<a href="product1.html" class="shop_item">
+				<p class="new_tag">NEW</p>
+				<div class="image_wrapper">
+					<img src="pictures/flower_product_1.jpg" alt="picture of product" class="product_image" id="product_image">
+				</div>
+				<p class="product_name">Philosophia earrings</p>
+				<p class="product_price">65,00DKK</p>
+			</a>
+
+			<a href="product2.html" class="shop_item">
+				<img src="pictures/product2.png" alt="picture of product" class="product_image">
+				<p class="product_name">Shooting stars earrings</p>
+				<p class="product_price">65,00DKK</p>
+			</a>
+
+			<a href="product3.html" class="shop_item">
+				<img src="pictures/bear_product_1.jpg" alt="picture of product" class="product_image">
+				<p class="product_name">Huggies set</p>
+				<p class="product_price">120,00DKK</p>
+			</a>
+
+			<a href="product4.html" class="shop_item">
+				<img src="pictures/Group%2016.png" alt="picture of product" class="product_image">
+				<p class="product_name">Outer space earrings</p>
+				<p class="product_price">45,00DKK</p>
+			</a>
+
+			<a href="product5.html" class="shop_item">
+				<p class="new_tag">NEW</p>
+				<img src="pictures/Crystal_product_2.jpg" alt="picture of product" class="product_image">
+				<p class="product_name">Celine drop earrings</p>
+				<p class="product_price">70,00DKK</p>
+			</a>
+
+			<a href="product6.html" class="shop_item">
+				<img src="pictures//Scroll%20Group%206.png" alt="picture of product" class="product_image">
+				<p class="product_name">Illuminate earrings</p>
+				<p class="product_price">60,00DKK</p>
+			</a>
+
+			<a href="product7.html" class="shop_item">
+				<img src="pictures/butterfly_ptoduct_2.jpg" alt="picture of product" class="product_image">
+				<p class="product_name">Magnolia set</p>
+				<p class="product_price">110,00DKK</p>
+			</a>
+
+			<a href="product.html" class="shop_item">
+				<p class="sale_tag">SALE</p>
+				<img src="pictures/Scroll%20Group%202.png" alt="picture of product" class="product_image">
+				<p class="product_name">Smooth like a snake necklace</p>
+				<p class="product_price sale_old">75,00DKK </p>
+				<p class="product_price sale_current">65,00DKK</p>
+			</a>
+
+			<a href="product19.html" class="shop_item">
+				<img src="pictures/bear_earrings.png" alt="picture of product" class="product_image">
+				<p class="product_name">Huggies earrings</p>
+				<p class="product_price">65,00DKK</p>
+			</a>
+
+
+
+
+		</div>
+
+
+		<!-- mobile version -->
+
+
+		<div class="shop_item_container_mobile">
+
+			<a href="product1.html" class="shop_item">
+				<p class="new_tag">NEW</p>
+				<div class="image_wrapper">
+					<img src="pictures/images_for_mobile/mobile_product_4.jpg" alt="picture of product" class="product_image">
+				</div>
+				<p class="product_name">Philosophia earrings</p>
+				<p class="product_price">65,00DKK</p>
+			</a>
+
+			<div class="pdroduct_row">
+
+				<a href="product2.html" class="shop_item">
+					<img src="pictures/images_for_mobile/Scroll%20Group%207.png" alt="picture of product" class="product_image">
+					<p class="product_name">Shooting star earring</p>
+					<p class="product_price">65,00DKK</p>
+				</a>
+
+				<div class="space"></div>
+
+				<a href="product3.html" class="shop_item">
+					<img src="pictures/images_for_mobile/mobile_product_1.jpg" alt="picture of product" class="product_image">
+					<p class="product_name">Huggies set</p>
+					<p class="product_price">120,00DKK</p>
+				</a>
+
+			</div>
+
+			<a href="product4.html" class="shop_item">
+				<img src="pictures/images_for_mobile/Image%202.png" alt="picture of product" class="product_image">
+				<p class="product_name">Outer space earrings</p>
+				<p class="product_price">45,00DKK</p>
+			</a>
+
+			<div class="pdroduct_row">
+
+				<a href="product5.html" class="shop_item">
+					<p class="new_tag">NEW</p>
+					<img src="pictures/images_for_mobile/mobile_product_3.jpg" alt="picture of product" class="product_image">
+					<p class="product_name">Celine drop earrings</p>
+					<p class="product_price">70,00DKK</p>
+				</a>
+
+				<div class="space"></div>
+
+				<a href="product7.html" class="shop_item">
+					<img src="pictures/images_for_mobile/mobile_product_2.jpg" alt="picture of product" class="product_image">
+					<p class="product_name">Magnolia set</p>
+					<p class="product_price">110,00DKK</p>
+				</a>
+
+			</div>
+
+		</div>
+
+
+	</main>
+
+	<footer class="footer_container">
+
+		<div class="footer_section">
+			<div class="footer_element">
+				<h2 class="footer_header" style="color: white">HELP AND INFO</h2>
+				<div class="underline"></div>
+				<a class="footer_link" href="contact.html">Help</a><br>
+				<a class="footer_link" href="policy.html">Shipping and returns</a><br>
+				<a class="footer_link" href="policy.html">Policy</a><br>
+				<a class="footer_link" href="policy.html">Covid-19 information</a><br>
+				<a class="footer_link" href="contact.html">Contact me</a><br>
+				<a class="footer_link" href="policy.html">Terms of service</a><br>
+			</div>
+
+			<div class="footer_element">
+				<h2 class="footer_header" style="color: white">CONTACT</h2>
+				<div class="underline"></div>
+				<span>Email:<br><a style="color: white" href="mailto:moonvyjewellery@gmail.com">moonvyjewellery@gmail.com</a>
+				</span><br><br>
+				<span>Phone:<br><a style="color: white" href="tel:+4512345678">+45 12 34 56 78</a>
+				</span>
+			</div>
+
+			<div class="footer_element">
+				<h2 class="footer_header" style="color: white">FOLLOW</h2>
+				<div class="underline"></div>
+				<div>
+					<a class="no_underline" href="https://www.instagram.com/moonvy_jewellery/"><img alt="instagram logo" class="some_logo" src="pictures/white-instagram-icon-png.png"> </a>
+					<a href="https://www.tiktok.com/@moonvy_jewellery?"><img alt="tiktok logo" class="some_logo" src="pictures/tiktok-48.png"> </a>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- scripts -->
+	<script src="js/js.js"></script>
+
+
+
+</body></html>

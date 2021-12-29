@@ -1,0 +1,81 @@
+/* active element in the navigation bar */
+.active_menuitem {
+	text-decoration: underline !important;
+}
+
+
+/* Display company logo */
+.companylogo {
+	display: block;
+	height: 70px;
+	margin: auto;
+}
+
+.bag_icon {
+	height: 33px;
+	position: absolute;
+	right: 30px;
+	top: 22px;
+}
+
+.search_icon {
+	height: 30px;
+	position: absolute;
+	right: 80px;
+	top: 22px;
+}
+
+/**-----MAIN-----**/
+.about_container {
+	max-width: 85%;
+	margin: 50px auto;
+	padding-bottom: 70px;
+}
+
+.about_header {
+	padding-top: 30px;
+}
+
+.about_bodytext {}
+
+.about_story_image_container {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.about_story_image {
+	max-width: 49%;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.About_day_image {
+	max-width: 100%;
+}
+
+.About_materials_image_container {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.about_materials_image {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+	.display {
+		display: none;
+	}
+
+	.about_story_image {
+		max-width: 100%;
+	}
+}

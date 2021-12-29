@@ -1,0 +1,73 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+	font-family: 'Poppins', sans-serif;
+	background-color: white;
+}
+
+.page_body {
+	max-width: 100%;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3
+{
+	font-family: Cambria, Georgia, serif;
+	font-weight: 700;
+	color: #9A6E6E;
+	/** font-family: 'Playfair Display', serif; **/
+}
+
+h1 {
+	font-size: 33px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+/* my code */
+
+.sectionpolicy {
+    margin: 100px 50px;
+    position: relative;
+
+}
+
+.ullist{
+    display: flex;
+    flex-direction: column;
+
+}
+
+ul{
+    list-style-type: square;
+}
+
+
+li{
+    text-align: start;
+}
+
+

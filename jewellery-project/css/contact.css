@@ -1,0 +1,98 @@
+/* active element in the navigation bar*/
+
+.active_menuitem {
+	text-decoration: underline !important;
+}
+
+.underline_on_hover:hover {
+	text-decoration: underline;
+}
+
+/* Display company logo */
+.companylogo {
+	display: block;
+	height: 70px;
+	margin: auto;
+}
+
+.bag_icon {
+	height: 33px;
+	position: absolute;
+	right: 30px;
+	top: 22px;
+}
+
+.search_icon {
+	height: 30px;
+	position: absolute;
+	right: 80px;
+	top: 22px;
+}
+
+/* Contact us part*/
+.contact_us {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.container {
+	width: 600px;
+	background-color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+form {
+	margin: 35px;
+}
+
+.input_field {
+	width: 600px;
+	height: 50px;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 3px solid #DBADAD;
+	outline: none;
+
+}
+
+.textarea {
+	height: 90px;
+	padding-top: 10px;
+}
+
+.button {
+	color: #fff;
+	background-color: #DBADAD;
+	border-radius: 50px;
+	padding: 10px 15px 10px 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	font-size: 18px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.button:hover {
+	background-color: #DBBEC0;
+}
+
+
+
+
+
+/* mobile version */
+
+@media only screen and (max-width: 800px) {
+	.container {
+		width: 100%;
+	}
+
+	.input_field {
+		width: 100%;
+	}
+}

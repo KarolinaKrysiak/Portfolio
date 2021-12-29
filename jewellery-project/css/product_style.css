@@ -1,0 +1,448 @@
+main {
+	margin: 30px 50px;
+}
+
+/* links on the top of the page */
+
+.product_links {
+	color: #D7AAAA;
+	text-decoration: none;
+	margin: 30px 0;
+}
+
+.product_link {
+	color: #D7AAAA;
+	text-decoration: none;
+}
+
+/*menu*/
+.underline_on_hover:hover {
+	text-decoration: underline;
+}
+
+/* the image and elements to the right of it */
+
+.section_product {
+	display: flex;
+}
+
+
+/* Slideshow -  https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.slideshow-container {
+	max-width: 50%;
+	padding-right: 25px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: rgb(219, 173, 173, 0.5);
+	transform: translate(0, -50%);
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 25px;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: #DBADAD;
+}
+
+.dots_product {
+	position: relative;
+	bottom: -15px;
+	left: 41%;
+}
+
+.dot {
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	margin: 0 7px;
+	background-color: #DBBEC0;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #9A6E6E;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+
+
+/* elements to the right */
+.product_actions {
+	padding-left: 25px;
+	width: 50%
+}
+
+
+/* new tag */
+.new_tag {
+	color: #DBBEC0;
+	background-color: white;
+	border: solid 3px #DBBEC0;
+	font-size: 1.6rem;
+	padding: 2px 15px;
+	text-align: center;
+}
+
+.options {
+	display: flex;
+	justify-content: space-around;
+	margin: 100px 0 50px
+}
+
+/* select */
+
+.select {
+	background-color: white;
+	border: solid 3px #DBADAD;
+	border-radius: 100px;
+	width: 230px;
+	padding: 15px;
+	font-size: 18px;
+	color: #DBADAD;
+	cursor: pointer;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.select:hover {
+	background-color: #DBADAD;
+	color: white;
+}
+
+
+/*amount button*/
+
+.ammount_button {
+	border: solid 3px #DBADAD;
+	border-radius: 100px;
+	width: 230px;
+	color: #DBADAD;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.minus_plus {
+	background: none;
+	border-radius: 100px;
+	width: 50px;
+	font-size: 40px;
+	color: #DBADAD;
+	cursor: pointer;
+	margin: 0 20px;
+	padding: 0 13px
+}
+
+
+.number {
+	margin: auto;
+	font-size: 30px;
+}
+
+.button {
+	background-color: #DBADAD;
+	color: white;
+	padding: 13px;
+	width: 220px;
+	border-radius: 100px;
+	cursor: pointer;
+	font-size: 18px;
+	display: block;
+	margin: auto;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.button:hover {
+	background-color: #DBBEC0;
+}
+
+/* section with descriptions and reviews */
+
+.section_text {
+	display: flex;
+	margin: 100px 0;
+}
+
+/*descriptions part*/
+
+.description {
+	width: 50%;
+	padding: 0 80px 0 50px;
+}
+
+.description_element {
+	margin-bottom: 40px;
+}
+
+.description_header {
+	color: #9A6E6E;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	cursor: pointer;
+	font-family: Cambria, Georgia, serif;
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.hide {
+	display: none;
+}
+
+
+
+/*reviews part*/
+
+.header_reviews {
+	font-size: 25px;
+}
+
+.reviews {
+	width: 50%;
+	padding-left: 25px;
+}
+
+.review {
+	margin: 20px 0;
+}
+
+.pink_line {
+	width: 100%;
+	height: 2px;
+	background-color: #DBADAD;
+}
+
+.star {
+	height: 25px;
+	margin: 3px 0 8px;
+}
+
+/* other products */
+
+.header_products {
+	font-size: 25px;
+}
+
+.front_page_images {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0 50px;
+}
+
+.shop_item {
+	text-decoration: none;
+	color: #3A3A3A;
+	width: 32%;
+	padding-bottom: 40px;
+	margin-top: 30px
+}
+
+.product_image {
+	max-width: 90%;
+	display: inline-block;
+	overflow: hidden;
+	transition: .3s;
+}
+
+.product_image:hover {
+	transform: scale(1.05);
+	opacity: 70%;
+}
+
+.product_name {
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.product_price {
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.section_other_products {
+	overflow-x: hidden;
+}
+
+
+@media only screen and (max-width: 800px) {
+	main {
+		margin: 0;
+		overflow-x: hidden
+	}
+
+	.product_links {
+		display: none;
+	}
+
+	.section_product {
+		flex-direction: column;
+	}
+
+	.picure_product {
+		max-width: 100%;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30px
+	}
+
+	.next {
+		right: 0;
+	}
+
+	.prev,
+	.next {
+		font-size: 24px;
+		background-color: #DBADAD;
+	}
+
+	.product_header {
+		display: flex;
+	}
+
+	.section_text {
+		flex-direction: column;
+	}
+
+	.description {
+		width: 100%;
+		margin-bottom: 30px;
+		padding: 25px;
+	}
+
+	.reviews {
+		width: 100%;
+		padding-right: 25px;
+	}
+
+	.new_tag {
+		text-align: center;
+		display: block;
+		margin-top: 6px;
+	}
+
+	.select {
+		width: 190px;
+		padding: 15px 10px;
+		margin-right: 20px
+	}
+
+	.ammount_button {
+		width: 150px;
+	}
+
+	.minus_plus {
+		margin: 0;
+	}
+
+	.product_actions {
+		width: auto;
+		padding-right: 25px;
+	}
+
+	.options {
+		margin: 50px 0;
+	}
+
+
+
+	.front_page_images {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+		margin: 0 5px;
+	}
+
+	.shop_item {
+		width: 200px;
+		margin: 20px;
+	}
+
+	.header_products {
+		margin: 25px;
+	}
+
+	.product_image {
+		max-width: 100%;
+	}
+
+	.product_name {
+		display: block;
+		width: 180px;
+	}
+
+	.slideshow-container {
+		max-width: 100%;
+		padding-right: 0px;
+		margin-bottom: 20px;
+	}
+
+
+	.dots_product {
+		left: 30%;
+	}
+
+	.dot {
+		height: 30px;
+		width: 30px;
+		margin: 0 10px 20px;
+	}
+
+}

@@ -1,0 +1,382 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+html {
+	font-size: 100%;
+	font-family: 'Poppins', sans-serif;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+.page_body {
+	max-width: 100%;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+
+h1,
+h2,
+h3 {
+	font-family: Cambria, Georgia, serif;
+	font-weight: 700;
+	color: #9A6E6E;
+	/** font-family: 'Playfair Display', serif; **/
+}
+
+h1 {
+	font-size: 33px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 15px;
+}
+
+
+
+/**-----HEADER-----**/
+
+.navigation_container {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	max-width: 100%
+}
+
+.header_top {
+	background-color: #DBBEC0;
+	max-width: 100%;
+}
+
+
+.menuitems_container {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+.menuitem {
+	padding: 10px;
+	margin: 0 70px;
+	color: #9A6E6E;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	font-family: Cambria, Georgia, serif;
+}
+
+.underline_on_hover:hover {
+	text-decoration: underline;
+}
+
+
+/* Display company logo */
+.companylogo {
+	display: block;
+	height: 70px;
+	margin: auto;
+	max-width: 100%;
+}
+
+.bag_icon {
+	height: 33px;
+	position: absolute;
+	right: 30px;
+	top: 22px;
+}
+
+.search_icon {
+	height: 30px;
+	position: absolute;
+	right: 80px;
+	top: 22px;
+	cursor: pointer;
+}
+
+/* search field */
+
+.search {
+	display: none;
+	position: absolute;
+	right: 0;
+	max-height: 100%;
+	width: 300px;
+}
+
+.visible {
+	display: block;
+}
+
+#productName {
+	width: 100%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #ddd;
+	box-shadow: -3px 0 6px rgba(0, 0, 0, 0.16);
+}
+
+#myUL {
+	/* Remove default list styling */
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+#myUL li {
+	border: 1px solid #ddd;
+	margin-top: -1px;
+	background-color: white;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+}
+
+#myUL li:hover:not(.header) {
+	background-color: #eee;
+	/* Add a hover effect to all links, except for headers */
+}
+
+.search_link {
+	text-decoration: none;
+	color: #9A6E6E;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 30px;
+	width: 600px;
+	border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.window_text {
+	margin: 40px 30px;
+}
+
+.window_button {
+	padding: 10px;
+	width: 215px;
+	text-align: center;
+}
+
+
+/**-----FOOTER-----**/
+
+
+.footer_container {
+	background-color: #DBBEC0;
+	padding: 60px;
+	color: white;
+	margin-top: 40px;
+	max-width: 100%
+}
+
+.footer_header {
+	margin-bottom: -10px;
+	max-width: 100%;
+}
+
+.some_logo {
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.no_underline {
+	text-decoration: none;
+}
+
+.footer_section {
+	display: flex;
+	justify-content: center;
+}
+
+.footer_element {
+	width: 20%;
+	margin: 0 5%;
+}
+
+
+.footer_link {
+	text-decoration: none;
+	color: white;
+}
+
+
+.underline {
+	background-color: white;
+	width: 200px;
+	height: 3px;
+	margin: 20px 0;
+}
+
+/* overlay mobile menu */
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	background-color: #D9BFBE;
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-links {
+	position: relative;
+	top: 150px;
+	margin: 0 60px;
+	font-family: Cambria, Georgia, serif;
+
+}
+
+
+.overlay_link {
+	text-decoration: none;
+	font-size: 35px;
+	color: white;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.x_button {
+	position: absolute;
+	left: 20px;
+	font-size: 90px;
+	color: white;
+}
+
+.menu_some_icons {
+	display: flex;
+}
+
+.menu_some_icon {
+	height: 50px;
+	margin: 10px 10px 0 0;
+}
+
+.menu_logo {
+	position: absolute;
+	height: 80px;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+@media only screen and (min-width: 800px) {
+	.mobile {
+		display: none;
+	}
+
+	.mobileicon {
+		display: none
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+	.desktop {
+		display: none;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.mobileicon {
+		position: absolute;
+		left: 40px;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		font-weight: bold;
+		font-size: 42px;
+	}
+
+	.search_icon {
+		right: 62px
+	}
+
+	.bag_icon {
+		right: 12px;
+	}
+
+
+
+
+	.footer_container {
+		padding: 0 0 50px 0;
+	}
+
+	.footer_section {
+		flex-direction: column;
+	}
+
+	.footer_element {
+		margin-top: 50px;
+		width: 100%;
+	}
+
+
+}

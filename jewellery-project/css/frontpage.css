@@ -1,0 +1,201 @@
+/**-----MAIN-----**/
+
+/* image on the top of the page */
+
+/* Slideshow container */
+.slideshow_container {
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlidesFrontpage {
+	display: none;
+	width: 100%;
+}
+
+.mySlidesMobile {
+	display: none;
+	width: 100%;
+}
+
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+
+
+
+.container {
+	position: relative;
+	text-align: center;
+}
+
+.big_image {
+	width: 100%;
+}
+
+.color_overlay {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+
+.big_image_elements {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.button {
+	background-color: #DBADAD;
+	color: white;
+	width: 220px;
+	border-radius: 100px;
+	cursor: pointer;
+	font-size: 18px;
+	display: block;
+	margin: auto;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	height: 47px;
+	text-align: center;
+	padding: 10.5px;
+}
+
+.button_link {
+	text-decoration: none;
+	color: white;
+}
+
+
+.button:hover {
+	background-color: #DBBEC0;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+
+/*bouncing arrow https://codepen.io/bitstarr/pen/XjaJGz*/
+
+.bounce {
+	animation: bounce 2s infinite;
+}
+
+.arrow {
+	width: 50px;
+	display: block;
+	margin: auto;
+	margin-top: -40px
+}
+
+
+@keyframes bounce {
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-25px);
+	}
+
+	60% {
+		transform: translateY(-10px);
+	}
+}
+
+/* now trending and on sale sections */
+
+.section2 {
+	margin: 100px 50px;
+}
+
+
+.front_page_images {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px auto 50px;
+}
+
+.front_page_image_link {
+	text-decoration: none;
+	color: #3A3A3A;
+	width: 32%;
+	padding-bottom: 40px;
+}
+
+.front_page_image {
+	max-width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	transition: .3s;
+}
+
+.front_page_image:hover {
+	transform: scale(1.05);
+	opacity: 70%;
+}
+
+
+/*the picture in the middle of the front page */
+
+.picture_middle {
+	width: 100%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+	.container {
+		margin-bottom: 100px;
+	}
+
+	.big_image_elements_mobile {
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+	}
+}
