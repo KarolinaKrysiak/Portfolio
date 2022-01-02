@@ -662,6 +662,14 @@ p {
   margin-top: 70px;
 }
 
+.details-right a {
+  color: var(--text-color-light);
+  display: block;
+  max-width: 600px;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
 .details-top {
   display: flex;
   flex-direction: row;
