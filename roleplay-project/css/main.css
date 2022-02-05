@@ -477,8 +477,6 @@ li:before {
   margin: 40px auto;
 }
 
-.gallery-content a {}
-
 .gallery-content img {
   object-fit: contain;
   transition: 0.5s;
@@ -495,8 +493,6 @@ li:before {
   margin: 100px auto;
 }
 
-.newsletter-container button {}
-
 /*Contact*/
 .headquarters {
   background-image: url("../img/fightclub.JPG");
@@ -512,10 +508,6 @@ li:before {
 .single-member {
   display: flex;
 }
-
-.single-member-image {}
-
-.single-member-text {}
 
 /*Map*/
 .map {
@@ -806,9 +798,6 @@ footer h4 {
   height: 1px;
   background-color: #cacaca;
 }
-
-/* map part */
-.footer-map {}
 
 /*copyright*/
 .copyright {
