@@ -42,9 +42,9 @@ html {
     #0c0c0c,
     #111,
     #222,
-    rgb(36, 12, 17),
-    rgb(25, 29, 54),
-    rgb(16, 19, 29),
+    #240c11,
+    #191d36,
+    #10131d,
     #070707
   );
   background-size: 400% 1100%;
@@ -422,17 +422,7 @@ p {
   .section-me {
     flex-direction: column;
   }
-  .section-about {
-    margin-top: -500px;
-  }
-  .section-me {
-    margin-top: 100px;
-  }
 
-  .section-hobby {
-    margin-top: -100px;
-    margin-bottom: 100px;
-  }
   .section-skillset {
     margin-top: 300px;
   }
