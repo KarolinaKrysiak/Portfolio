@@ -355,7 +355,7 @@ p {
   object-fit: cover;
 }
 
-@media screen and (max-device-width: 900px) {
+@media screen and (max-width: 900px) {
   .description-section {
     flex-direction: column-reverse;
     height: 100%;
