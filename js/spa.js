@@ -13,6 +13,12 @@ function showPage(pageId) {
 	hideAllPages();
 	document.querySelector(`#${pageId}`).style.display = "block";
 	setActiveTab(pageId);
+	// Scroll to top when changing pages
+	window.scroll({
+		top: 0, 
+		left: 0, 
+		behavior: 'smooth'
+	});
 }
 
 // sets active tabbar/ menu item
